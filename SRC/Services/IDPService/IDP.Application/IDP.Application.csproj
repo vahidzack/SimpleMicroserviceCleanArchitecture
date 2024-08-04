@@ -9,11 +9,15 @@
   <ItemGroup>
     <Folder Include="DTO\" />
     <Folder Include="Helper\" />
-    <Folder Include="Query\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Auth\Auth.csproj" />
+    <ProjectReference Include="..\IDP.Infra\IDP.Infra.csproj" />
   </ItemGroup>
 
 </Project>
